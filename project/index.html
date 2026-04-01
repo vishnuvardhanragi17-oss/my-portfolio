@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Vishnu Portfolio</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<div class="container">
+
+<a class="navbar-brand" href="#">Vishnu Vardhan</a>
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="nav">
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+<li class="nav-item"><a class="nav-link" href="#qualifications">Qualifications</a></li>
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">More</a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="#skills">Skills</a></li>
+<li><a class="dropdown-item" href="#certifications">Certifications</a></li>
+</ul>
+</li>
+
+<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+
+</ul>
+</div>
+
+</div>
+</nav>
+
+<!-- HOME WITH BACKGROUND IMAGE -->
+<section id="home" class="text-center text-white d-flex align-items-center">
+<div class="overlay"></div>
+
+<div class="container">
+<h1>Hi, I'm Vishnu Vardhan</h1>
+<p>IT Student | Future Full Stack Developer</p>
+<a href="#about" class="btn btn-primary">Explore</a>
+</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="p-5">
+<div class="container">
+<div class="row">
+
+<div class="col-md-4 text-center">
+<img src="assets/profile.png" class="rounded-circle img-fluid profile-img">
+</div>
+
+<div class="col-md-8">
+<h2>About Me</h2>
+<p>I am a 2nd year IT student passionate about Web Development, AI, and building real-world projects.</p>
+
+<div class="row">
+<div class="col-md-6"><b>Name:</b> Vishnu Vardhan</div>
+<div class="col-md-6"><b>Age:</b> 20</div>
+<div class="col-md-6"><b>Email:</b> vishnuvardhanragi17@gmail.com</div>
+<div class="col-md-6"><b>Phone:</b> 7569138037</div>
+</div>
+
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- QUALIFICATIONS -->
+<section id="qualifications" class="bg-light p-5">
+<div class="container">
+
+<h2 class="text-center">Qualifications</h2>
+
+<table class="table table-bordered table-striped mt-4">
+<tr>
+<th>Course</th>
+<th>Institute</th>
+<th>Grade</th>
+</tr>
+
+<tr>
+<td>B.Tech IT</td>
+<td>Vasavi College Of Engineering</td>
+<td><span class="badge bg-success">8.5 CGPA</span></td>
+</tr>
+
+<tr>
+<td>Intermediate</td>
+<td>Alphores Junior College</td>
+<td><span class="badge bg-primary">98%</span></td>
+</tr>
+
+</table>
+
+</div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="p-5">
+<div class="container">
+
+<h2 class="text-center">Skills</h2>
+
+<label>HTML</label>
+<div class="progress mb-3">
+<div class="progress-bar" style="width:90%">90%</div>
+</div>
+
+<label>CSS</label>
+<div class="progress mb-3">
+<div class="progress-bar bg-success" style="width:85%">85%</div>
+</div>
+
+<label>Java</label>
+<div class="progress mb-3">
+<div class="progress-bar bg-warning" style="width:80%">80%</div>
+</div>
+
+<ul class="list-group mt-4">
+<li class="list-group-item">C Programming</li>
+<li class="list-group-item">Java</li>
+<li class="list-group-item">DBMS</li>
+<li class="list-group-item">Data Structures</li>
+
+</ul>
+
+</div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications" class="bg-light p-5">
+<div class="container">
+
+<h2 class="text-center">Certifications</h2>
+
+<div class="row mt-4">
+
+<div class="col-md-4">
+<div class="card">
+<div class="card-body">
+<h5>Python Certificate</h5>
+<span class="badge bg-info">Completed</span>
+
+<button class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#cert">
+View Certificate
+</button>
+
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- MODAL WITH CERTIFICATE IMAGE -->
+<div class="modal fade" id="cert">
+<div class="modal-dialog">
+<div class="modal-content p-3 text-center">
+
+<h4>Python Certificate</h4>
+
+<img src="assets/certificate.png" class="img-fluid mt-3">
+
+</div>
+</div>
+</div>
+
+<!-- CONTACT -->
+<section id="contact" class="p-5">
+<div class="container">
+
+<h2 class="text-center">Contact Me</h2>
+
+<form onsubmit="return validate()" class="mt-4">
+
+<input type="text" id="name" class="form-control mb-3" placeholder="Name" required>
+
+<input type="email" id="email" class="form-control mb-3" placeholder="Email" required>
+
+<input type="text" id="mobile" class="form-control mb-3" placeholder="Mobile" required>
+
+<textarea class="form-control mb-3" placeholder="Message" required></textarea>
+
+<button class="btn btn-success w-100">Submit</button>
+
+</form>
+
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center p-3">
+<p>© 2026 Vishnu Vardhan</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
